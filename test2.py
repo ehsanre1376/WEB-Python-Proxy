@@ -11,12 +11,8 @@ logging.basicConfig(level=logging.INFO)
 # Default address to which you want to forward the requests
 DEFAULT_FORWARD_URL = 'http://78.158.168.230'  # Change this to your target URL
 
-@app.route('/')
-def home():
-    return "Welcome to the Flask Proxy!"
-
-@app.route('/forward', defaults={'path': ''}, methods=['GET', 'POST', 'PUT', 'DELETE', 'PATCH'])
-@app.route('/forward/<path:path>', methods=['GET', 'POST', 'PUT', 'DELETE', 'PATCH'])
+@app.route('/', defaults={'path': ''}, methods=['GET', 'POST', 'PUT', 'DELETE', 'PATCH'])
+@app.route('/<path:path>', methods=['GET', 'POST', 'PUT', 'DELETE', 'PATCH'])
 def forward_request(path):
     # Get the original request method and data
     method = request.method
@@ -47,4 +43,4 @@ def forward_request(path):
         return Response(f"Error forwarding request: {str(e)}", status=500)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)  # Run in debug mode
+    app.run(port=5000)  # You can change the port if needed

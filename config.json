@@ -1,0 +1,7 @@
+{
+  "TARGET_URL": "http://78.158.168.230",
+  "REQUEST_LIMIT": 100,
+  "LOG_FILE": "proxy.log",
+  "PORT": 8080,
+  "MAX_WORKERS": 10
+}

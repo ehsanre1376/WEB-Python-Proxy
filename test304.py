@@ -1,27 +1,22 @@
-import os
-import sys
-import json
-import logging
-import asyncio
 import aiohttp
-import servicemanager
-import win32service
-import win32serviceutil
-from aiohttp import web
+import asyncio
+import logging
+import json
+import os
 import time
-
+from aiohttp import web
 
 # Load configuration from config.json
-#with open('config.json') as config_file:
-#    config = json.load(config_file)
+with open('config.json') as config_file:
+    config = json.load(config_file)
 
 # Set up logging
-logging.basicConfig(filename="proxy.log"'''config['LOG_FILE']''', level=logging.INFO, format='%(asctime)s - %(message)s')
+logging.basicConfig(filename=config['LOG_FILE'], level=logging.INFO, format='%(asctime)s - %(message)s')
 
 # Configuration for the target URL
-TARGET_URL ="http://78.158.168.230"# config['TARGET_URL']
-REQUEST_LIMIT =100# config['REQUEST_LIMIT']
-PORT =8080# config['PORT']
+TARGET_URL = config['TARGET_URL']
+REQUEST_LIMIT = config['REQUEST_LIMIT']
+PORT = config['PORT']
 
 class RateLimiter:
     def __init__(self, limit: int):
@@ -81,29 +76,9 @@ async def init_app() -> web.Application:
     app.router.add_route('*', '/{path:.*}', handle_request)
     return app
 
-class AiohttpService(win32serviceutil.ServiceFramework):
-    _svc_name_ = "AiohttpService1"
-    _svc_display_name_ = "Aiohttp Web Service1"
-    _svc_description_ = "A simple aiohttp web service running as a Windows service1."
-
-    def __init__(self, args):
-        win32serviceutil.ServiceFramework.__init__(self, args)
-        self.stop_event = asyncio.Event()
-        self.loop = asyncio.get_event_loop()
-        self.app = self.loop.run_until_complete(init_app())
-        self.server = None
-
-    def SvcStop(self):
-        self.ReportServiceStatus(win32service.SERVICE_STOP_PENDING)
-        self.stop_event.set()
-        if self.server:
-            self.server.close()
-
-    def SvcDoRun(self):
-        servicemanager.LogMsg(servicemanager.EVENTLOG_INFORMATION_TYPE,
-                               servicemanager.PYS_SERVICE_STARTED,
-                               (self._svc_name_, ''))
-        self.server = self.loop.run_until_complete(web.run_app(self.app, port=PORT))
-
 if __name__ == '__main__':
-    win32serviceutil.HandleCommandLine(AiohttpService)
+    app = init_app()
+    try:
+        web.run_app(app, port=PORT)
+    except KeyboardInterrupt:
+        logging.info("Server shutting down.")
