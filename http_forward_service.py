@@ -1,27 +1,22 @@
-import os
-import sys
-import json
-import logging
-import asyncio
 import aiohttp
-import servicemanager
-import win32service
-import win32serviceutil
-from aiohttp import web
+import asyncio
+import logging
 import time
+import win32serviceutil
+import win32service
+import win32event
+import servicemanager
+from aiohttp import web
 
-
-# Load configuration from config.json
-#with open('config.json') as config_file:
-#    config = json.load(config_file)
+# Configuration settings
+LOG_FILE = "C:\\Users\\EHSANRE\\OneDrive\\Project\\WEB-Python-Proxy\\Install\\logfile.log"  # Change this to your desired log file path
+TARGET_URL = "http://78.158.168.230"  # Change this to your target URL
+REQUEST_LIMIT = 100  # Set your request limit
+PORT = 8080  # Set the port for the server
+PERIODIC_TASK_INTERVAL = 60  # Set the interval for the periodic task
 
 # Set up logging
-logging.basicConfig(filename="proxy.log"'''config['LOG_FILE']''', level=logging.INFO, format='%(asctime)s - %(message)s')
-
-# Configuration for the target URL
-TARGET_URL ="http://78.158.168.230"# config['TARGET_URL']
-REQUEST_LIMIT =100# config['REQUEST_LIMIT']
-PORT =8080# config['PORT']
+logging.basicConfig(filename=LOG_FILE, level=logging.INFO, format='%(asctime)s - %(message)s')
 
 class RateLimiter:
     def __init__(self, limit: int):
@@ -81,29 +76,41 @@ async def init_app() -> web.Application:
     app.router.add_route('*', '/{path:.*}', handle_request)
     return app
 
-class AiohttpService(win32serviceutil.ServiceFramework):
-    _svc_name_ = "AiohttpService1"
-    _svc_display_name_ = "Aiohttp Web Service1"
-    _svc_description_ = "A simple aiohttp web service running as a Windows service1."
+class MyService(win32serviceutil.ServiceFramework):
+    _svc_name_ = "MyAiohttpService"
+    _svc_display_name_ = "My Aiohttp Service"
+    _svc_description_ = "This service runs an aiohttp web server."
 
     def __init__(self, args):
         win32serviceutil.ServiceFramework.__init__(self, args)
-        self.stop_event = asyncio.Event()
+        self.stop_event = win32event.CreateEvent(None, 0, 0, None)
         self.loop = asyncio.get_event_loop()
         self.app = self.loop.run_until_complete(init_app())
-        self.server = None
+        self.running = True
 
     def SvcStop(self):
         self.ReportServiceStatus(win32service.SERVICE_STOP_PENDING)
-        self.stop_event.set()
-        if self.server:
-            self.server.close()
+        win32event.SetEvent(self.stop_event)
+        self.running = False
+        logging.info("Service is stopping...")
 
     def SvcDoRun(self):
-        servicemanager.LogMsg(servicemanager.EVENTLOG_INFORMATION_TYPE,
-                               servicemanager.PYS_SERVICE_STARTED,
-                               (self._svc_name_, ''))
-        self.server = self.loop.run_until_complete(web.run_app(self.app, port=PORT))
+        logging.info("Service is starting...")
+        self.loop.create_task(self.run_periodic_task())  # Start the periodic task
+        web.run_app(self.app, port=PORT)
 
+    async def run_periodic_task(self):
+        while self.running:
+            logging.info("Performing periodic task...")
+            # You can add your task logic here
+            await asyncio.sleep(PERIODIC_TASK_INTERVAL)  # Sleep for the specified interval
+
+
+    # Your main service logic here
+    # Sleep for a while to avoid busy-waiting
 if __name__ == '__main__':
-    win32serviceutil.HandleCommandLine(AiohttpService)
+    win32serviceutil.HandleCommandLine(MyService)
+    # Run the application directly for debugging
+    app = asyncio.run(init_app())
+    asyncio.run(web.run_app(app, port=PORT))
+    

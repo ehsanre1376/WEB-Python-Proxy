@@ -1,0 +1,119 @@
+2024-09-11T23:39:25.763 INFO  console - Starting service 'Your Service Display Name (Ehsan)'...
+2024-09-11T23:39:26.132 DEBUG console - Starting WinSW in service mode.
+2024-09-11T23:39:26.194 INFO  service - Starting C:\Users\EHSANRE\OneDrive\Project\WEB-Python-Proxy\.venv\Scripts\python.exe
+2024-09-11T23:39:26.245 INFO  service - Started process python (29456).
+2024-09-11T23:39:26.282 INFO  service - Service started successfully.
+2024-09-11T23:39:26.440 INFO  console - Service 'Your Service Display Name (Ehsan)' started successfully.
+2024-09-11T23:39:26.857 WARN  service - Child process 'python (29456)' finished with code 1.
+2024-09-11T23:40:00.825 INFO  console - Starting service 'Your Service Display Name (Ehsan)'...
+2024-09-11T23:40:01.195 DEBUG console - Starting WinSW in service mode.
+2024-09-11T23:40:01.259 INFO  service - Starting C:\Users\EHSANRE\OneDrive\Project\WEB-Python-Proxy\.venv\Scripts\python.exe
+2024-09-11T23:40:01.309 INFO  service - Started process python (26060).
+2024-09-11T23:40:01.350 INFO  service - Service started successfully.
+2024-09-11T23:40:01.510 INFO  console - Service 'Your Service Display Name (Ehsan)' started successfully.
+2024-09-11T23:40:01.907 WARN  service - Child process 'python (26060)' finished with code 1.
+2024-09-11T23:44:42.288 DEBUG console - Starting WinSW in service mode.
+2024-09-11T23:44:42.365 INFO  service - Starting C:\Users\EHSANRE\OneDrive\Project\WEB-Python-Proxy\.venv\Scripts\python.exe
+2024-09-11T23:44:42.435 INFO  service - Started process python (10508).
+2024-09-11T23:44:42.490 INFO  service - Service started successfully.
+2024-09-11T23:48:28.480 INFO  service - Stopping Ehsan
+2024-09-11T23:48:28.484 DEBUG service - ProcessKill 10508
+2024-09-11T23:48:28.545 INFO  service - Child process 'python (10508)' canceled with code -1073741510.
+2024-09-11T23:48:28.565 INFO  service - Finished Ehsan
+2024-09-11T23:48:28.566 INFO  service - Service stopped successfully.
+2024-09-11T23:48:32.561 DEBUG console - Starting WinSW in service mode.
+2024-09-11T23:48:32.629 INFO  service - Starting C:\Users\EHSANRE\OneDrive\Project\WEB-Python-Proxy\.venv\Scripts\python.exe
+2024-09-11T23:48:32.684 INFO  service - Started process python (12768).
+2024-09-11T23:48:32.783 INFO  service - Service started successfully.
+2024-09-11T23:48:33.631 WARN  service - Child process 'python (12768)' finished with code 1.
+2024-09-11T23:53:43.479 INFO  console - Uninstalling service 'Your Service Display Name (Ehsan)'...
+2024-09-11T23:53:43.525 INFO  console - Service 'Your Service Display Name (Ehsan)' was uninstalled successfully.
+2024-09-11T23:53:56.348 INFO  console - Installing service 'Your Service Display Name (Ehsan)'...
+2024-09-11T23:53:56.406 INFO  console - Service 'Your Service Display Name (Ehsan)' was installed successfully.
+2024-09-11T23:54:05.753 INFO  console - Starting service 'Your Service Display Name (Ehsan)'...
+2024-09-11T23:54:06.117 DEBUG console - Starting WinSW in service mode.
+2024-09-11T23:54:06.179 INFO  service - Starting C:\Users\EHSANRE\OneDrive\Project\WEB-Python-Proxy\.venv\Scripts\python.exe
+2024-09-11T23:54:06.229 INFO  service - Started process python (2456).
+2024-09-11T23:54:06.266 INFO  service - Service started successfully.
+2024-09-11T23:54:06.436 INFO  console - Service 'Your Service Display Name (Ehsan)' started successfully.
+2024-09-11T23:54:06.867 WARN  service - Child process 'python (2456)' finished with code 1.
+2024-09-11T23:54:17.323 DEBUG console - Starting WinSW in service mode.
+2024-09-11T23:54:17.385 INFO  service - Starting C:\Users\EHSANRE\OneDrive\Project\WEB-Python-Proxy\.venv\Scripts\python.exe
+2024-09-11T23:54:17.436 INFO  service - Started process python (29328).
+2024-09-11T23:54:17.477 INFO  service - Service started successfully.
+2024-09-11T23:54:18.046 WARN  service - Child process 'python (29328)' finished with code 1.
+2024-09-11T23:55:18.284 INFO  console - Starting service 'Your Service Display Name (Ehsan)'...
+2024-09-11T23:55:18.743 DEBUG console - Starting WinSW in service mode.
+2024-09-11T23:55:18.804 INFO  service - Starting C:\Users\EHSANRE\OneDrive\Project\WEB-Python-Proxy\.venv\Scripts\python.exe
+2024-09-11T23:55:18.855 INFO  service - Started process python (16388).
+2024-09-11T23:55:18.892 INFO  service - Service started successfully.
+2024-09-11T23:55:19.055 INFO  console - Service 'Your Service Display Name (Ehsan)' started successfully.
+2024-09-11T23:55:19.473 WARN  service - Child process 'python (16388)' finished with code 1.
+2024-09-11T23:56:33.227 INFO  console - Starting service 'Your Service Display Name (Ehsan)'...
+2024-09-11T23:56:33.601 DEBUG console - Starting WinSW in service mode.
+2024-09-11T23:56:33.667 INFO  service - Starting C:\Users\EHSANRE\OneDrive\Project\WEB-Python-Proxy\.venv\Scripts\python.exe
+2024-09-11T23:56:33.716 INFO  service - Started process python (30848).
+2024-09-11T23:56:33.757 INFO  service - Service started successfully.
+2024-09-11T23:56:33.913 INFO  console - Service 'Your Service Display Name (Ehsan)' started successfully.
+2024-09-12T00:04:35.626 INFO  console - Starting service 'Your Service Display Name (Ehsan)'...
+2024-09-12T00:04:35.658 INFO  console - Service 'Your Service Display Name (Ehsan)' has already started.
+2024-09-12T00:09:05.808 INFO  service - Stopping Ehsan
+2024-09-12T00:09:05.812 DEBUG service - ProcessKill 30848
+2024-09-12T00:09:05.915 INFO  service - Child process 'python (30848)' canceled with code -1073741510.
+2024-09-12T00:09:05.935 INFO  service - Finished Ehsan
+2024-09-12T00:09:05.936 INFO  service - Service stopped successfully.
+2024-09-12T00:09:33.119 INFO  console - Uninstalling service 'Your Service Display Name (Ehsan)'...
+2024-09-12T00:09:33.165 INFO  console - Service 'Your Service Display Name (Ehsan)' was uninstalled successfully.
+2024-09-12T00:09:46.477 INFO  console - Installing service 'Your Service Display Name (Ehsan)'...
+2024-09-12T00:09:46.540 INFO  console - Service 'Your Service Display Name (Ehsan)' was installed successfully.
+2024-09-12T00:09:52.224 INFO  console - Starting service 'Your Service Display Name (Ehsan)'...
+2024-09-12T00:09:52.621 DEBUG console - Starting WinSW in service mode.
+2024-09-12T00:09:52.683 INFO  service - Starting C:\Users\EHSANRE\OneDrive\Project\WEB-Python-Proxy\.venv\Scripts\python.exe
+2024-09-12T00:09:52.732 INFO  service - Started process python (23524).
+2024-09-12T00:09:52.774 INFO  service - Service started successfully.
+2024-09-12T00:09:52.929 INFO  console - Service 'Your Service Display Name (Ehsan)' started successfully.
+2024-09-12T00:09:53.557 WARN  service - Child process 'python (23524)' finished with code 1.
+2024-09-12T00:10:03.067 DEBUG console - Starting WinSW in service mode.
+2024-09-12T00:10:03.129 INFO  service - Starting C:\Users\EHSANRE\OneDrive\Project\WEB-Python-Proxy\.venv\Scripts\python.exe
+2024-09-12T00:10:03.179 INFO  service - Started process python (6604).
+2024-09-12T00:10:03.219 INFO  service - Service started successfully.
+2024-09-12T00:10:03.798 WARN  service - Child process 'python (6604)' finished with code 1.
+2024-09-12T00:10:09.343 INFO  console - Starting service 'Your Service Display Name (Ehsan)'...
+2024-09-12T00:10:09.714 DEBUG console - Starting WinSW in service mode.
+2024-09-12T00:10:09.776 INFO  service - Starting C:\Users\EHSANRE\OneDrive\Project\WEB-Python-Proxy\.venv\Scripts\python.exe
+2024-09-12T00:10:09.862 INFO  service - Started process python (23872).
+2024-09-12T00:10:09.912 INFO  service - Service started successfully.
+2024-09-12T00:10:10.026 INFO  console - Service 'Your Service Display Name (Ehsan)' started successfully.
+2024-09-12T00:10:10.512 WARN  service - Child process 'python (23872)' finished with code 1.
+2024-09-12T00:12:14.332 INFO  console - Uninstalling service 'Your Service Display Name (Ehsan)'...
+2024-09-12T00:12:14.379 INFO  console - Service 'Your Service Display Name (Ehsan)' was uninstalled successfully.
+2024-09-12T00:12:19.831 INFO  console - Installing service 'Your Service Display Name (Ehsan)'...
+2024-09-12T00:12:19.893 INFO  console - Service 'Your Service Display Name (Ehsan)' was installed successfully.
+2024-09-12T00:12:22.042 INFO  console - Starting service 'Your Service Display Name (Ehsan)'...
+2024-09-12T00:12:22.512 DEBUG console - Starting WinSW in service mode.
+2024-09-12T00:12:22.582 INFO  service - Starting C:\Users\EHSANRE\OneDrive\Project\WEB-Python-Proxy\.venv\Scripts\python.exe
+2024-09-12T00:12:22.633 INFO  service - Started process python (25280).
+2024-09-12T00:12:22.679 INFO  service - Service started successfully.
+2024-09-12T00:12:22.834 INFO  console - Service 'Your Service Display Name (Ehsan)' started successfully.
+2024-09-12T00:12:23.382 WARN  service - Child process 'python (25280)' finished with code 1.
+2024-09-12T00:14:38.878 INFO  console - Starting service 'Your Service Display Name (Ehsan)'...
+2024-09-12T00:14:39.275 DEBUG console - Starting WinSW in service mode.
+2024-09-12T00:14:39.336 INFO  service - Starting C:\Users\EHSANRE\OneDrive\Project\WEB-Python-Proxy\.venv\Scripts\python.exe
+2024-09-12T00:14:39.385 INFO  service - Started process python (23088).
+2024-09-12T00:14:39.423 INFO  service - Service started successfully.
+2024-09-12T00:14:39.592 INFO  console - Service 'Your Service Display Name (Ehsan)' started successfully.
+2024-09-12T00:14:50.122 WARN  service - Child process 'python (23088)' finished with code 1.
+2024-09-12T00:15:10.259 INFO  console - Starting service 'Your Service Display Name (Ehsan)'...
+2024-09-12T00:15:10.656 DEBUG console - Starting WinSW in service mode.
+2024-09-12T00:15:10.734 INFO  service - Starting C:\Users\EHSANRE\OneDrive\Project\WEB-Python-Proxy\.venv\Scripts\python.exe
+2024-09-12T00:15:10.823 INFO  service - Started process python (29364).
+2024-09-12T00:15:10.894 INFO  service - Service started successfully.
+2024-09-12T00:15:10.975 INFO  console - Service 'Your Service Display Name (Ehsan)' started successfully.
+2024-09-12T00:15:11.658 WARN  service - Child process 'python (29364)' finished with code 1.
+2024-09-12T00:16:43.212 INFO  console - Starting service 'Your Service Display Name (Ehsan)'...
+2024-09-12T00:16:43.804 DEBUG console - Starting WinSW in service mode.
+2024-09-12T00:16:43.882 INFO  service - Starting C:\Users\EHSANRE\OneDrive\Project\WEB-Python-Proxy\.venv\Scripts\python.exe
+2024-09-12T00:16:43.965 INFO  service - Started process python (30628).
+2024-09-12T00:16:44.025 INFO  service - Service started successfully.
+2024-09-12T00:16:44.138 INFO  console - Service 'Your Service Display Name (Ehsan)' started successfully.
+2024-09-12T00:16:44.847 WARN  service - Child process 'python (30628)' finished with code 1.

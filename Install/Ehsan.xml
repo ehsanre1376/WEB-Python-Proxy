@@ -1,0 +1,9 @@
+<service>
+  <id>Ehsan</id>
+  <name>Your Service Display Name</name>
+  <description>Your service description.</description>
+  <executable>C:\Users\EHSANRE\OneDrive\Project\WEB-Python-Proxy\.venv\Scripts\python.exe</executable>
+  <arguments>C:\Users\EHSANRE\OneDrive\Project\WEB-Python-Proxy\.venv\Scripts\http_forward_service.py</arguments>
+  <logpath>C:\Users\EHSANRE\OneDrive\Project\WEB-Python-Proxy\logs</logpath>
+  <log mode="roll">true</log>
+</service>
