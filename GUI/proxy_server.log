@@ -1,0 +1,3 @@
+2024-09-12 01:01:13,879 - Error starting server: Cannot run the event loop while another loop is running
+2024-09-12 01:03:06,978 - Task was destroyed but it is pending!
+task: <Task cancelling name='Task-2' coro=<_run_app() running at C:\Users\EHSANRE\OneDrive\Project\WEB-Python-Proxy\.venv\Lib\site-packages\aiohttp\web.py:300> cb=[gather.<locals>._done_callback() at C:\Program Files\Python312\Lib\asyncio\tasks.py:767]>

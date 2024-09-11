@@ -1,0 +1,13 @@
+2024-09-12 01:03:49,626 - Error starting server: Cannot run the event loop while another loop is running
+2024-09-12 01:03:59,314 - Error starting server: Cannot run the event loop while another loop is running
+2024-09-12 01:04:36,653 - Task was destroyed but it is pending!
+task: <Task cancelling name='Task-2' coro=<_run_app() running at C:\Users\EHSANRE\OneDrive\Project\WEB-Python-Proxy\.venv\Lib\site-packages\aiohttp\web.py:300> cb=[gather.<locals>._done_callback() at C:\Program Files\Python312\Lib\asyncio\tasks.py:767]>
+2024-09-12 01:04:36,654 - Task was destroyed but it is pending!
+task: <Task cancelling name='Task-4' coro=<_run_app() running at C:\Users\EHSANRE\OneDrive\Project\WEB-Python-Proxy\.venv\Lib\site-packages\aiohttp\web.py:300> cb=[gather.<locals>._done_callback() at C:\Program Files\Python312\Lib\asyncio\tasks.py:767]>
+2024-09-12 01:06:54,542 - Task was destroyed but it is pending!
+task: <Task cancelling name='Task-2' coro=<_run_app() running at C:\Users\EHSANRE\OneDrive\Project\WEB-Python-Proxy\.venv\Lib\site-packages\aiohttp\web.py:300> cb=[gather.<locals>._done_callback() at C:\Program Files\Python312\Lib\asyncio\tasks.py:767]>
+2024-09-12 01:07:53,011 - Task was destroyed but it is pending!
+task: <Task cancelling name='Task-2' coro=<_run_app() running at C:\Users\EHSANRE\OneDrive\Project\WEB-Python-Proxy\.venv\Lib\site-packages\aiohttp\web.py:300> cb=[gather.<locals>._done_callback() at C:\Program Files\Python312\Lib\asyncio\tasks.py:767]>
+2024-09-12 01:08:21,140 - Error starting server: Cannot run the event loop while another loop is running
+2024-09-12 01:09:56,528 - Task was destroyed but it is pending!
+task: <Task cancelling name='Task-2' coro=<_run_app() running at C:\Users\EHSANRE\OneDrive\Project\WEB-Python-Proxy\.venv\Lib\site-packages\aiohttp\web.py:300> cb=[gather.<locals>._done_callback() at C:\Program Files\Python312\Lib\asyncio\tasks.py:767]>
